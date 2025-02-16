@@ -99,7 +99,7 @@ HTML의 `<h1> <h2> <h3> <h4> <h5> <h6>` 와 같은 역할을 하며 `#`개수에
  취소선 : ~~ 로 감싼 텍스트
 ```
 
-> _italic_ _em_ <br> > **bold** **strong** <br> > ~~del~~
+> _italic_ _em_ <br> >**bold** **strong** <br> >~~del~~
 
 <br>
 
