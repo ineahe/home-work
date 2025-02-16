@@ -163,14 +163,14 @@ HTML의 `<h1> <h2> <h3> <h4> <h5> <h6>` 와 같은 역할을 하며 `#`개수에
 
 ````
 ```javascript
-founction test() {
+function test() {
   console.log("언어에 맞춰 강조됨");
 }
 ```
 ````
 
 > ```javascript
-> founction test() {
+> function test() {
 >   console.log("언어에 맞춰 강조됨");
 > }
 > ```
