@@ -23,7 +23,6 @@ body {
   height: 64px;
 } 
 
-
 .status {
   position: absolute; 
   bottom: 0px;
@@ -33,7 +32,6 @@ body {
   border-radius: 50%;
   border: 1px solid #ffffff;
 }
-
 
 .online {
   background-color: #4cfe88;
