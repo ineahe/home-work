@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 100px;
+}
+
+.avatar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 316px;
+}
+
+.avatar {
+  position: relative; /* 자식 요소(.status)가 절대 위치를 가질 때 기준이 됨 */
+  display: flex; /* 내부 요소(img)를 유연하게 정렬함 */
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+} 
+
+
+.status {
+  position: absolute; 
+  bottom: 0px;
+  right: 0px;
+  width: 17.78px;
+  height: 17.78px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+
+.online {
+  background-color: #4cfe88;
+} 
+
+.offline {
+  background-color: #dbdbdb;
+}

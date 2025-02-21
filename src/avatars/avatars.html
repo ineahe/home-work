@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatars 과제</title>
+    <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon"/>
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" />
+    <link rel="stylesheet" href="./styles/avatars.css" />
+  </head>
+  <body>
+    <section class="avatar-container">
+      <div class="avatar" aria-label="여자1 오프라인"> <!-- aria-label를 사용해 스크린 리더가 읽어줌으로서 청각적 상태 정보를 제공함 -->
+        <img src="/src/avatars/images/face1.jpg" alt="여자1" loading="lazy" /> <!-- 이미지 성능(로딩) 최적화를 위해 loading="lazy" 추가함 -->
+        <div class="status offline"></div> <!-- 유지보수, 접근성을 위해 div로 직접 상태를 표시함 -->
+      </div>
+      <div class="avatar" aria-label="여자2 온라인">
+        <img src="/src/avatars/images/face2.jpg" alt="여자2" loading="lazy" />
+        <div class="status online"></div>
+      </div>
+      <div class="avatar" aria-label="여자3 오프라인">
+        <img src="/src/avatars/images/face3.jpg" alt="여자3" loading="lazy" />
+        <div class="status offline"></div>
+      </div>
+      <div class="avatar" aria-label="여자4 온라인">
+        <img src="/src/avatars/images/face4.jpg" alt="여자4" loading="lazy" />
+        <div class="status online"></div>
+      </div>  
+      <div class="avatar" aria-label="남자1 온라인">
+        <img src="/src/avatars/images/face5.jpg" alt="남자1" loading="lazy" />
+        <div class="status online"></div>
+      </div>
+      <div class="avatar" aria-label="남자2 온라인">
+        <img src="/src/avatars/images/face6.jpg" alt="남자2" loading="lazy" />
+        <div class="status online"></div>
+      </div>
+      <div class="avatar" aria-label="남자3 오프라인">
+        <img src="/src/avatars/images/face7.jpg" alt="남자3" loading="lazy" />
+        <div class="status offline"></div>
+      </div>
+      <div class="avatar" aria-label="남자4 오프라인">
+        <img src="/src/avatars/images/face8.jpg" alt="남자4" loading="lazy" />
+        <div class="status offline"></div>
+      </div>
+    </section>
+  </body>
+</html>
