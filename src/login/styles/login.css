@@ -1,1 +1,168 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+body {
+  --base-font-size: 1rem;
+  --base-font-color: #121212;
+
+  font-family: "Pretendard", sans-serif;
+  color: var(--base-font-color);
+  font-size: var(--base-font-size);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 웹 접근성 고려 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  max-inline-size: 31.25rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/* 로고 */
+.brand {
+  display: block;
+  inline-size: 14.375rem;
+  margin-inline: auto;
+  margin-block: 3.125rem;
+}
+
+/* 로그인 폼 */
+.login-form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.625rem;
+  margin-block-start: 3.125rem;
+
+  .input-field {
+    font-size: 0.875rem;
+    height: 2.8125rem;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    padding-left: 0.5rem;
+  }
+  
+  .input-field:focus {
+    outline-color: #03cf5d;
+    background-color: #e9f0fd;
+  }
+}
+
+/* 에러 메시지 */
+.error-message {
+  display: none;
+  color: red;
+  font-size: .875rem;
+}
+
+/* 값이 입력된 상태일 때 입력 값이 유효하지 않을 시 에러 메시지 표시 */
+input:invalid:not(:placeholder-shown) + .error-message {
+  display: inline;
+}
+
+/* 로그인 버튼 */
+.button-login {
+  width: 100%;
+  font-size: var(--base-font-size);
+  height: 2.8125rem;
+  color: #fff;
+  background: #03cf5d;
+  margin-block-start: 1.25rem;
+  cursor: pointer;
+  border: none;
+
+  &:focus {
+    box-shadow: 0px 4px 4px 0px rgba(68, 131, 63, 0.15);
+  }
+}
+
+/* 로그인 상태 옵션 */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .625rem;
+}
+
+.keep-check {
+  display: flex;
+  align-items: center;
+}
+
+.ip-security{
+  display: flex;
+  gap: 0.5rem;  
+}
+
+[type="checkbox"] {
+  appearance: none;
+  inline-size: 24px;
+  block-size: 24px;
+  margin-inline-end: 0.3125rem;
+  background: url(../assets/unchecked.svg) no-repeat center / cover;
+  border: none;
+  cursor: pointer;
+}
+
+[type="checkbox"]:checked {
+  background: url(../assets/checked.svg) no-repeat center / cover;
+}
+
+/* IP 보안 체크박스 */
+.ip-status {
+  display: flex;
+  align-items: center;
+}
+
+/* 기본 체크박스 숨기기 */
+.ip-checkbox {
+  display: none;
+}
+
+/* ON/OFF 스위치 */
+.ip-label::after {
+  content: "OFF";
+  font-weight: bold;
+  color: #121212;
+  font-size: 1rem;
+  margin-left: .5rem;
+}
+
+/* (체크 상태일 때) ON으로 변경 */
+.ip-checkbox:checked + .ip-label::after {
+  content: "ON";
+  color: #03cf5d;
+}
+
+/* IP 보안 OFF (768px 미만일 때 사용자에게 제공되지 않음) */
+.ip-status {
+  display: none;
+}
+
+/* 768px 이상일 때만 사용자에게 보이도록 설정함 */
+@media (min-width: 768px) {
+  .ip-status {
+    display: flex;
+  }
+}
+
+/* 768px 미만일 때 <로그인 상태 유지> 오른쪽으로 위치 이동 */
+@media (max-width: 767px) {
+  .login-options {
+    justify-content: flex-end;
+  }
+}
