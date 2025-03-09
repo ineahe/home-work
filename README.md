@@ -4,13 +4,18 @@
 
 ## 1~2주차
 
-- [마크다운 문법](./src/md/markdown.md)
+- [markdown](./src/md/markdown.md)
 - [1~2주차 회고](./src/md/retrospect.md)
 
 ## 3주차
-- [아바타](/src/avatars/avatars.html)
+- [avatars](/src/avatars/avatars.html)
 - [3주차 회고](/src/avatars/avatars.md)
 
 ## 4주차
-- [로그인](/src/login/login.html)
+- [login](/src/login/login.html)
 - [4주차 회고](/src/login/login.md)
+
+## 5주차
+- [apple](/src/apple/apple.html)
+- [component](/src/apple/card-component.html)
+- [5주차 회고](/src/apple/apple.md)
